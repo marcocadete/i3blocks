@@ -132,8 +132,24 @@ interval=2
 markup=pango
 ```
 
-## IP
-<br />
+## IP  
+This script will contact NordVPN's api and inform you if your ip is protected or not.
+For example, if you're on a vpn or not.  
+
+### Dependencies
+* curl
+
+### Installation  
+* Copy the ip script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x ip`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[ip]   
+command=$SCRIPT_DIR/ip  
+interval=60
+markup=pango  
+color=#91E78B
+```
 
 ## Quote
 <br />
