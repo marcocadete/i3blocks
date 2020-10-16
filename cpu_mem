@@ -1,0 +1,23 @@
+#!/usr/bin/python                                                     
+
+import os
+import psutil
+import subprocess
+
+button = os.getenv('button')
+cpu_color = '#91E78B'
+mem_color = '#91E78B'
+
+if button == '1':
+    subprocess.call("xfce4-taskmanager")
+
+cpu_percentage = psutil.cpu_percent(1)
+mem_percentage = psutil.virtual_memory()[2]
+
+if cpu_percentage > 80: 
+    cpu_color = '#ff1100'
+
+if mem_percentage > 80: 
+    mem_color = '#ff1100'
+
+print(f'<span foreground="{cpu_color}"> {cpu_percentage}%</span><span foreground="{mem_color}">  {mem_percentage}%</span>')
