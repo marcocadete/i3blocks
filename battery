@@ -1,0 +1,42 @@
+#!/usr/bin/bash                                                                                           
+
+battery_percentage=$(acpi -b | awk '{print $4}' | grep -E -o '[0-9]{2,3}')
+charging_status=$(acpi -a | awk '{print $3}')
+battery_icon_charging=''
+battery_icon_full=''
+battery_icon_three_quarters=''
+battery_icon_half=''
+battery_icon_quarter=''
+
+if [ "$charging_status" == "off-line" ]
+then
+  if [ $battery_percentage -gt 75 ]
+  then
+    echo "<span foreground='#12db26'>${battery_icon_full} ${battery_percentage}%</span>"
+
+  elif [ $battery_percentage -le 75 ]
+  then
+    echo "<span foreground='#f7bd3e'>${battery_icon_three_quarters} ${battery_percentage}%</span>"
+
+  elif [ $battery_percentage -le 50 ]
+  then
+    echo "<span foreground='#f7663e'>${battery_icon_half} ${battery_percentage}%</span>"
+
+  elif [ $battery_percentage -le 25 ]
+  then
+    echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
+
+  # Warning Message
+  elif [ $battery_percentage -eq 15 ]
+  then
+    i3-msg -q exec $(zenity --warning --text="Battery is running low. Please charge urgently." )
+    echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
+  fi  
+
+fi
+
+
+if [ "$charging_status" == "on-line" ]
+then
+  echo "<span foreground='#12db26'>${battery_icon_charging} ${battery_percentage}%</span>"
+fi
