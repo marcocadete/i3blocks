@@ -15,12 +15,12 @@ fi
 
 if [ $button -eq "1" ] && [ $is_muted -eq 1 ] 
 then
-  pulsemixer --unmute❘·
+  pulsemixer --unmute
   echo " $volume%"
 
 elif [ $button -eq "1" ] && [ $is_muted -eq 0 ]·
 then
-  pulsemixer --mute❘·
+  pulsemixer --mute
   echo " "
 
 elif [ !$button ] && [ $is_muted -eq 0 ] 
