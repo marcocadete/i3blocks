@@ -8,6 +8,13 @@ battery_icon_three_quarters=''
 battery_icon_half=''
 battery_icon_quarter=''
 
+# Warning Message
+if [ $battery_percentage -eq 10 ]
+  then
+    i3-msg -q exec $(zenity --warning --text="Battery is running low. Please charge urgently.")
+    echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
+fi
+
 if [ "$charging_status" == "off-line" ]
 then
   if [ $battery_percentage -gt 75 ]
@@ -24,12 +31,6 @@ then
 
   elif [ $battery_percentage -le 25 ]
   then
-    echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
-
-  # Warning Message
-  elif [ $battery_percentage -eq 15 ]
-  then
-    i3-msg -q exec $(zenity --warning --text="Battery is running low. Please charge urgently.")
     echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
   fi  
 
