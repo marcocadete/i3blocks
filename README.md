@@ -172,6 +172,7 @@ markup=pango
 ## Volume    
 ### Dependencies
 * pulsemixer
+* pavucontrol or other volume control application
 * font awesome
 
 ### Installation  
