@@ -1,0 +1,15 @@
+#!/usr/bin/bash                                                       
+
+if [[ $button -eq "3" ]]
+then
+  i3-msg -q exec 'orage --toggle'
+fi
+
+if [[ $button -eq "1" ]]
+then
+  i3-msg -q exec orage
+  echo $(date +'%T <span foreground="#34c9eb">  %d/%m/%Y</span>')
+
+else
+  echo $(date +'%T <span foreground="#34c9eb">  %d/%m/%Y</span>')
+fi
