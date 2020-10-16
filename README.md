@@ -23,7 +23,7 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 
 ### Dependencies
 * acpi
-* fontawesome
+* font awesome
 
 ### Installation  
 * Copy the battery script into your directory of choice, e.g. ~/.config/i3blocks/
@@ -36,8 +36,28 @@ interval=5
 markup=pango  
 ```
 
-## Cpu
-<br />
+## Cpu  
+
+### Dependencies
+* python
+* psutil
+* a task manager e.g xfce4-taskmanager
+* font awesome
+
+### Installation  
+* Copy the cpu_mem script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x cpu_mem`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[cpu_mem]  
+full_text=click  
+command=$SCRIPT_DIR/cpu_mem  
+interval=1  
+markup=pango  
+color=#91E78B
+```
+* Replace ```subprocess.call("xfce4-taskmanager")```  
+with a task manager of your choice.
 
 
 ## Disk
