@@ -1,0 +1,10 @@
+#!/usr/bin/bash                                                                                           
+
+# Get traffic every two seconds
+traffic=$(vnstat -tr > /tmp/netstat.txt)
+
+# Separate traffic into variables
+download=$(cat /tmp/netstat.txt | tail -2 | awk '{print $2}' | grep -Eo '[0-9].*')
+upload=$(cat /tmp/netstat.txt | tail -3 | head -1 | awk '{print $2}' | grep -Eo '[0-9].*')
+
+echo "<span foreground='#ebdb34'> $download</span> <span foreground='#d45f00'> $upload</span>"
