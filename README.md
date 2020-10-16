@@ -34,7 +34,8 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 command=$SCRIPT_DIR/battery  
 interval=5  
 markup=pango  
-```
+```  
+
 
 ## Cpu  
 
@@ -57,11 +58,24 @@ markup=pango
 color=#91E78B
 ```
 * Replace ```subprocess.call("xfce4-taskmanager")```  
-with a task manager of your choice.
+with a task manager of your choice.    
 
+## Disk  
+### Dependencies
+* font awesome
 
-## Disk
-<br />
+### Installation  
+* Copy the disk script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x disk`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[disk]    
+command=$SCRIPT_DIR/disk  
+interval=600    
+color=#ff7df4
+```
+* Replace ```'/dev/mapper/cryptroot'```  
+with the disk that you want to monitor.
 
 
 ## Date
