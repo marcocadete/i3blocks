@@ -151,5 +151,19 @@ markup=pango
 color=#91E78B
 ```
 
-## Quote
-<br />
+## Quote  
+This script will select a random quote for you.  
+
+### Dependencies
+* python
+
+### Installation  
+* Copy the quotes script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x quotes`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[quotes]   
+command=$SCRIPT_DIR/quotes  
+interval=21600
+markup=pango
+```
