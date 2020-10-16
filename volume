@@ -18,7 +18,7 @@ then
   pulsemixer --unmute
   echo " $volume%"
 
-elif [ $button -eq "1" ] && [ $is_muted -eq 0 ]·
+elif [ $button -eq "1" ] && [ $is_muted -eq 0 ]
 then
   pulsemixer --mute
   echo " "
