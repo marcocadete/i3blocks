@@ -1,0 +1,6 @@
+#!/usr/bin/bash                                                   
+ 
+disk_available=$(df -h | grep '/dev/mapper/cryptroot' | awk -F ' ' '{print $4}')
+disk_used_percentage=$(df -h | grep '/dev/mapper/cryptroot' | awk -F ' ' '{print $5}')
+
+echo " $disk_available/$disk_used_percentage"
