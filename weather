@@ -4,8 +4,8 @@ weather=$(curl https://wttr.in/Berlin?format=1 | tr -d ' ')
 
 if [[ $button -eq "1" ]]
 then
-❘-xfce4-terminal -e "bash -c 'curl https://wttr.in/Berlin';bash"
-❘-echo "$weather"
+  xfce4-terminal -e "bash -c 'curl https://wttr.in/Berlin';bash"
+  echo "$weather"
 else
-❘-echo "$weather"
+  echo "$weather"
 fi
