@@ -115,8 +115,22 @@ color=#ebe310
 * Replace ```'xfce4-terminal'```  
 with a terminal of your choice.
 
-## Network
-<br />
+## Network  
+### Dependencies
+* vnstat
+* font awesome
+
+### Installation  
+* Copy the network script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x network`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[network]   
+full_text=
+command=$SCRIPT_DIR/network  
+interval=2
+markup=pango
+```
 
 ## IP
 <br />
