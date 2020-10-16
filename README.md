@@ -172,6 +172,7 @@ markup=pango
 ## Volume    
 ### Dependencies
 * pulsemixer
+* font awesome
 
 ### Installation  
 * Copy the volume script into your directory of choice, e.g. ~/.config/i3blocks/
@@ -184,4 +185,11 @@ command=$SCRIPT_DIR/volume
 interval=once
 signal=10
 color=#eb9234
+```   
+* Add these to your i3wm config file e.g ~/.config/i3/config   
+```
+## i3block audio volume·
+bindsym --release XF86AudioRaiseVolume exec pkill -SIGRTMIN+10 i3blocks
+bindsym --release XF86AudioLowerVolume exec pkill -SIGRTMIN+10 i3blocks
+bindsym --release XF86AudioMute exec pkill -SIGRTMIN+10 i3blocks
 ```
