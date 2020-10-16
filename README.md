@@ -78,8 +78,23 @@ color=#ff7df4
 with the disk that you want to monitor.
 
 
-## Date
-<br />
+## Date  
+### Dependencies
+* font awesome
+* orage calendar, or a calendar of your choice.
+
+### Installation  
+* Copy the time_date script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x time_date`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[time_date]   
+full_text=
+command=$SCRIPT_DIR/time_date  
+interval=5    
+```
+* Replace ```'orage --toggle' and 'orage'```  
+with a calendar of your choice.
 
 ## Weather
 <br />
