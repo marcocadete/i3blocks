@@ -1,0 +1,19 @@
+#!/usr/bin/bash                                                                                           
+
+URL='https://api.nordvpn.com/vpn/check/full'
+
+response=$(curl -s $URL)
+
+ip=$(echo "$response" | jq -r '.ip')
+stat=$(echo "$response" | jq -r '.status')
+country=$(echo "$response" | jq -r '.country')
+code=$(echo "$response" | jq -r '.code')
+
+if [ "$stat" == "Unprotected" ]
+then
+  echo "<span foreground='#f54336'>Unprotected | $code</span>"
+
+elif [ "$stat" == "Protected" ]
+then
+  echo "<span foreground='#36f595'>Protected | $code</span>"
+fi
