@@ -17,6 +17,8 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 <br />
 [Quote](#quote)
 <br />
+[Volume](#volume)
+<br />
 
 
 ## Battery  
@@ -166,4 +168,20 @@ This script will select a random quote for you.
 command=$SCRIPT_DIR/quotes  
 interval=21600
 markup=pango
+```   
+## Volume    
+### Dependencies
+* pulsemixer
+
+### Installation  
+* Copy the volume script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x volume`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[volume]   
+full_text=click
+command=$SCRIPT_DIR/volume  
+interval=once
+signal=10
+color=#eb9234
 ```
