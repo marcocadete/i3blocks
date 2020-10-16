@@ -96,8 +96,24 @@ interval=5
 * Replace ```'orage --toggle' and 'orage'```  
 with a calendar of your choice.
 
-## Weather
-<br />
+## Weather  
+### Dependencies
+* curl
+* xfce4-terminal or other
+
+### Installation  
+* Copy the weather script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x weather`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[weather]   
+full_text=
+command=$SCRIPT_DIR/weather  
+interval=3600
+color=#ebe310
+```
+* Replace ```'xfce4-terminal'```  
+with a terminal of your choice.
 
 ## Network
 <br />
