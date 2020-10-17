@@ -1,13 +1,33 @@
-#!/usr/bin/python                                                                                         
-
-import requests
-
-url = 'https://api.quotable.io/random'
-response = requests.get(url)
-
-quote = response.json()['content']
-author = response.json()['author']
-status_code = response.status_code
-
-if status_code == 200:
-    print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</span>')
+#!/usr/bin/python                                                               
+                                                                                   
+import requests                                                                    
+import time                                                                     
+                                                                                
+def get_quote():                                                                
+    """Fetches a random quote from an api server"""                             
+                                                                                
+    url = 'https://api.quotable.io/random'                                      
+    status_code = None                                                          
+                                                                                
+    while status_code == None:                                                  
+        try:                                                                    
+            response = requests.get(url)                                        
+                                                                                
+            quote = response.json()['content']                                  
+            author = response.json()['author']                                  
+            status_code = response.status_code                                  
+                                                                                
+        except requests.exceptions.RequestException:                            
+            time.sleep(60)                                                      
+                                                                                
+                                                                                
+    if status_code == 200:                                                      
+        if len(quote) > 80:                                                     
+            quote = quote[0: 80] + '...'                                        
+            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</spa»
+        else:                                                                   
+            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</spa»
+    else:                                                                       
+        print('Error fetching quote')                                           
+                                                                                
+get_quote() 
