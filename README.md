@@ -23,7 +23,7 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 
 
 ## Battery  
-
+![Battery blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_battery_sv558o.png)
 ### Dependencies
 * acpi
 * font awesome
@@ -40,8 +40,8 @@ markup=pango
 ```  
 
 
-## Cpu  
-
+## CPU  
+![CPU blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_cpu_mem_s7m7do.png)
 ### Dependencies
 * python
 * psutil
@@ -64,6 +64,7 @@ color=#91E78B
 with a task manager of your choice.    
 
 ## Disk  
+![Disk blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_disk_pn3ki7.png)
 ### Dependencies
 * font awesome
 
@@ -82,6 +83,7 @@ with the disk that you want to monitor.
 
 
 ## Date  
+![Date blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_time_date_jg6pes.png)
 ### Dependencies
 * font awesome
 * orage calendar, or a calendar of your choice.
@@ -100,6 +102,7 @@ interval=5
 with a calendar of your choice.
 
 ## Weather  
+![Weather blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_weather_lzvtsz.png)
 ### Dependencies
 * curl
 * xfce4-terminal or other
@@ -119,6 +122,7 @@ color=#ebe310
 with a terminal of your choice.
 
 ## Network  
+![Network blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_network_zhuacl.png)
 ### Dependencies
 * vnstat
 * font awesome
@@ -136,6 +140,8 @@ markup=pango
 ```
 
 ## IP  
+![IP blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_check_my_ip_hstpot.png)  
+
 This script will contact NordVPN's api and inform you if your ip is protected or not.
 For example, if you're on a vpn or not.  
 
@@ -155,6 +161,8 @@ color=#91E78B
 ```
 
 ## Quote  
+![Quote blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603039224/github/i3bar_quotes_lualdl.png)  
+
 This script will select a random quote for you.  
 
 ### Dependencies
@@ -171,6 +179,7 @@ interval=21600
 markup=pango
 ```   
 ## Volume    
+![Volume blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_volume_de9j0n.png)
 ### Dependencies
 * pulsemixer
 * pavucontrol or other volume control application
