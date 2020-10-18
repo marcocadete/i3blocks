@@ -143,7 +143,7 @@ markup=pango
 ![IP blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_check_my_ip_hstpot.png)  
 
 This script will contact NordVPN's api and inform you if your ip is protected or not.
-For example, if you're on a vpn or not.  
+For example, if you're on a VPN or not.  
 
 ### Dependencies
 * curl
