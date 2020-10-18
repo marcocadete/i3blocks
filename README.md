@@ -44,8 +44,8 @@ command=$SCRIPT_DIR/battery
 interval=5  
 markup=pango  
 ```  
-
-<br />
+  
+  
 ## CPU  
 ![CPU blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_cpu_mem_s7m7do.png)  
 
@@ -71,8 +71,8 @@ color=#91E78B
 ```
 * Replace ```subprocess.call("xfce4-taskmanager")```  
 with a task manager of your choice.  
-
-<br />
+  
+  
 ## Disk  
 ![Disk blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_disk_pn3ki7.png)  
 
@@ -93,8 +93,8 @@ color=#ff7df4
 ```
 * Replace ```'/dev/mapper/cryptroot'```  
 with the disk that you want to monitor.  
-
-<br />
+  
+  
 ## Date  
 ![Date blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_time_date_jg6pes.png)  
 
@@ -116,8 +116,8 @@ interval=5
 ```
 * Replace ```'orage --toggle' and 'orage'```  
 with a calendar of your choice.  
-
-<br />
+  
+  
 ## Weather  
 ![Weather blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_weather_lzvtsz.png)  
 
@@ -140,8 +140,8 @@ color=#ebe310
 ```
 * Replace ```'xfce4-terminal'```  
 with a terminal of your choice.  
-
-<br />
+  
+  
 ## Network  
 ![Network blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_network_zhuacl.png)  
 
@@ -162,7 +162,8 @@ command=$SCRIPT_DIR/network
 interval=2
 markup=pango
 ```  
-<br />
+  
+  
 ## IP  
 ![IP blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_check_my_ip_hstpot.png)  
 
@@ -183,7 +184,8 @@ interval=60
 markup=pango  
 color=#91E78B
 ```  
-<br />
+  
+  
 ## Quote  
 ![Quote blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603039224/github/i3bar_quotes_lualdl.png)  
 
@@ -202,7 +204,8 @@ command=$SCRIPT_DIR/quotes
 interval=21600
 markup=pango
 ```  
-<br />
+  
+  
 ## Volume    
 ![Volume blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_volume_de9j0n.png)  
 
@@ -232,7 +235,8 @@ bindsym --release XF86AudioRaiseVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioLowerVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioMute exec pkill -SIGRTMIN+10 i3blocks
 ```  
-<br />
+  
+  
 ## Backlight    
 ![Backlight blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_backlight_gtpqmo.png)  
 
