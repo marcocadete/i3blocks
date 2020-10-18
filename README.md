@@ -1,3 +1,4 @@
+![i3 Window Manager block](https://res.cloudinary.com/dttanwhco/image/upload/v1603038642/github/i3bar_fqkrfm.png)
 # i3blocks blocklets
 This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](https://github.com/vivien/i3blocks)
 ##### Table of Contents  
