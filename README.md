@@ -181,7 +181,7 @@ color=#91E78B
 ## Quote  
 ![Quote blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603039224/github/i3bar_quotes_lualdl.png)  
 
-This script will select a random quote for you.  
+This script will select a random quote from an api server and display it for you.  
 
 ### Dependencies
 * python
@@ -197,7 +197,10 @@ interval=21600
 markup=pango
 ```   
 ## Volume    
-![Volume blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_volume_de9j0n.png)
+![Volume blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_volume_de9j0n.png)  
+
+This script will display the volume with options to mute/unmute and also open a volume control application.  
+
 ### Dependencies
 * pulsemixer
 * pavucontrol or other volume control application
