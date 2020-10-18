@@ -21,6 +21,8 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 <br />
 [Volume](#volume)
 <br />
+[Backlight](#backlight)
+<br />
 
 
 ## Battery  
@@ -225,4 +227,30 @@ color=#eb9234
 bindsym --release XF86AudioRaiseVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioLowerVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioMute exec pkill -SIGRTMIN+10 i3blocks
+```  
+## Backlight    
+![Backlight blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_backlight_gtpqmo.png)  
+
+This script will display the brightness of your screen.  
+
+### Dependencies
+* ![light](https://github.com/haikarainen/light)
+* font awesome
+
+### Installation  
+* Copy the backlight script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x backlight`)
+* Add the following blocket to your i3blocks config file:  
+```ini
+[backlight]   
+command=$SCRIPT_DIR/backlight  
+interval=once
+signal=9
+color=#f7f374
+```   
+* Add these to your i3wm config file e.g ~/.config/i3/config   
+```
+## i3block screen brightness·
+bindsym --release XF86MonBrightnessUp exec pkill -SIGRTMIN+9 i3blocks           
+bindsym --release XF86MonBrightnessDown exec pkill -SIGRTMIN+9 i3blocks
 ```
