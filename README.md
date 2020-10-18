@@ -31,7 +31,7 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 This script will display the batteries charge percentage.  
 
 ### Dependencies
-* acpi
+* ![acpi](https://sourceforge.net/projects/acpiclient/files/acpiclient/)  
 * font awesome
 
 ### Installation  
@@ -45,7 +45,7 @@ interval=5
 markup=pango  
 ```  
 
-
+<br />
 ## CPU  
 ![CPU blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_cpu_mem_s7m7do.png)  
 
@@ -53,7 +53,7 @@ This script will display the CPU and RAM memory usage.
 
 ### Dependencies
 * python
-* psutil
+* ![psutil](https://github.com/giampaolo/psutil) 
 * a task manager e.g xfce4-taskmanager
 * font awesome
 
@@ -70,8 +70,9 @@ markup=pango
 color=#91E78B
 ```
 * Replace ```subprocess.call("xfce4-taskmanager")```  
-with a task manager of your choice.    
+with a task manager of your choice.  
 
+<br />
 ## Disk  
 ![Disk blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_disk_pn3ki7.png)  
 
@@ -91,9 +92,9 @@ interval=600
 color=#ff7df4
 ```
 * Replace ```'/dev/mapper/cryptroot'```  
-with the disk that you want to monitor.
+with the disk that you want to monitor.  
 
-
+<br />
 ## Date  
 ![Date blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_time_date_jg6pes.png)  
 
@@ -114,8 +115,9 @@ command=$SCRIPT_DIR/time_date
 interval=5    
 ```
 * Replace ```'orage --toggle' and 'orage'```  
-with a calendar of your choice.
+with a calendar of your choice.  
 
+<br />
 ## Weather  
 ![Weather blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_weather_lzvtsz.png)  
 
@@ -137,15 +139,16 @@ interval=3600
 color=#ebe310
 ```
 * Replace ```'xfce4-terminal'```  
-with a terminal of your choice.
+with a terminal of your choice.  
 
+<br />
 ## Network  
 ![Network blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_network_zhuacl.png)  
 
 This script will display the download and upload traffic on your network.  
 
 ### Dependencies
-* vnstat
+* ![vnstat](https://humdi.net/vnstat/)
 * font awesome
 
 ### Installation  
@@ -158,8 +161,8 @@ full_text=
 command=$SCRIPT_DIR/network  
 interval=2
 markup=pango
-```
-
+```  
+<br />
 ## IP  
 ![IP blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_check_my_ip_hstpot.png)  
 
@@ -179,8 +182,8 @@ command=$SCRIPT_DIR/ip
 interval=60
 markup=pango  
 color=#91E78B
-```
-
+```  
+<br />
 ## Quote  
 ![Quote blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603039224/github/i3bar_quotes_lualdl.png)  
 
@@ -198,15 +201,16 @@ This script will select a random quote from an api server and display it for you
 command=$SCRIPT_DIR/quotes  
 interval=21600
 markup=pango
-```   
+```  
+<br />
 ## Volume    
 ![Volume blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_volume_de9j0n.png)  
 
 This script will display the volume with options to mute/unmute and also open a volume control application.  
 
 ### Dependencies
-* pulsemixer
-* pavucontrol or other volume control application
+* ![pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer)
+* ![pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) or other volume control application
 * font awesome
 
 ### Installation  
@@ -228,6 +232,7 @@ bindsym --release XF86AudioRaiseVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioLowerVolume exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release XF86AudioMute exec pkill -SIGRTMIN+10 i3blocks
 ```  
+<br />
 ## Backlight    
 ![Backlight blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_backlight_gtpqmo.png)  
 
