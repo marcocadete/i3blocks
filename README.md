@@ -8,7 +8,7 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 <br />
 [Disk](#disk)
 <br />
-[Date, time and Calendar](#date)
+[Date, Time and Calendar](#date)
 <br />
 [Weather](#weather)
 <br />
