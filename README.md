@@ -23,7 +23,10 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 
 
 ## Battery  
-![Battery blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_battery_sv558o.png)
+![Battery blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_battery_sv558o.png)  
+
+This script will display the batteries charge percentage.  
+
 ### Dependencies
 * acpi
 * font awesome
@@ -41,7 +44,10 @@ markup=pango
 
 
 ## CPU  
-![CPU blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_cpu_mem_s7m7do.png)
+![CPU blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_cpu_mem_s7m7do.png)  
+
+This script will display the CPU and RAM memory usage.  
+
 ### Dependencies
 * python
 * psutil
@@ -64,7 +70,10 @@ color=#91E78B
 with a task manager of your choice.    
 
 ## Disk  
-![Disk blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_disk_pn3ki7.png)
+![Disk blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_disk_pn3ki7.png)  
+
+This script will display the disk usage e.g How much disk space is left and the percentage used.  
+
 ### Dependencies
 * font awesome
 
@@ -83,7 +92,10 @@ with the disk that you want to monitor.
 
 
 ## Date  
-![Date blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_time_date_jg6pes.png)
+![Date blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_time_date_jg6pes.png)  
+
+This script will display the time and date, with an option to open and close a calendar.  
+
 ### Dependencies
 * font awesome
 * orage calendar, or a calendar of your choice.
@@ -102,7 +114,10 @@ interval=5
 with a calendar of your choice.
 
 ## Weather  
-![Weather blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_weather_lzvtsz.png)
+![Weather blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038518/github/i3bar_weather_lzvtsz.png)  
+
+This script will contact the wttr.in api and display the weather, with an option to open a terminal to display detailed weather information.  
+
 ### Dependencies
 * curl
 * xfce4-terminal or other
@@ -122,7 +137,10 @@ color=#ebe310
 with a terminal of your choice.
 
 ## Network  
-![Network blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_network_zhuacl.png)
+![Network blocklet](https://res.cloudinary.com/dttanwhco/image/upload/v1603038517/github/i3bar_network_zhuacl.png)  
+
+This script will display the download and upload traffic on your network.  
+
 ### Dependencies
 * vnstat
 * font awesome
