@@ -24,9 +24,9 @@ def get_quote():
     if status_code == 200:                                                      
         if len(quote) > 80:                                                     
             quote = quote[0: 80] + '...'                                        
-            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</spa»
+            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</span>')
         else:                                                                   
-            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</spa»
+            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</span>')
     else:                                                                       
         print('Error fetching quote')                                           
                                                                                 
