@@ -11,7 +11,7 @@ battery_icon_quarter=''
 # Warning Message
 if [ $battery_percentage -eq 10 ]
   then
-    i3-msg -q exec $(zenity --warning --text="Battery is running low. Please charge urgently.")
+    i3-msg -q exec $(notify-send --urgency=critical "Battery is running low. Please charge urgently.")
     echo "<span foreground='#f73e3e'>${battery_icon_quarter} ${battery_percentage}%</span>"
 fi
 
