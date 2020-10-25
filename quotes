@@ -1,15 +1,16 @@
 #!/usr/bin/python                                                               
                                                                                    
-import requests                                                                    
-import time                                                                     
+import requests                                                              
+import time                                                    
+
+
+def get_quote():                      
+    """Fetches a random quote from an api server"""              
                                                                                 
-def get_quote():                                                                
-    """Fetches a random quote from an api server"""                             
-                                                                                
-    url = 'https://api.quotable.io/random'                                      
+    url = 'https://api.quotable.io/random'                                
     status_code = None                                                          
                                                                                 
-    while status_code == None:                                                  
+    while status_code is None:                                                  
         try:                                                                    
             response = requests.get(url)                                        
                                                                                 
@@ -21,13 +22,10 @@ def get_quote():
             time.sleep(60)                                                      
                                                                                 
                                                                                 
-    if status_code == 200:                                                      
-        if len(quote) > 80:                                                     
-            quote = quote[0: 80] + '...'                                        
-            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</span>')
-        else:                                                                   
-            print(f'<span foreground="#fcba03">{quote}</span><span foreground="#826003"> -- {author}</span>')
+    if status_code == 200:
+        print(f'<span size="x-small" foreground="#fcba03">{quote}</span><span size="x-small" foreground="#826003"> -- {author}</span>')
     else:                                                                       
         print('Error fetching quote')                                           
-                                                                                
+
+
 get_quote() 
