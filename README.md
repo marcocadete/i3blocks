@@ -128,13 +128,13 @@ This script will contact the wttr.in api and display the weather, with an option
 * xfce4-terminal or other
 
 ### Installation  
-* Copy the weather script into your directory of choice, e.g. ~/.config/i3blocks/
-* Give it execution permission (`chmod +x weather`)
+* Copy the get_weather script into your directory of choice, e.g. ~/.config/i3blocks/
+* Give it execution permission (`chmod +x get_weather`)
 * Add the following blocket to your i3blocks config file:  
 ```ini
 [weather]   
 full_text=
-command=$SCRIPT_DIR/weather  
+command=$SCRIPT_DIR/get_weather  
 interval=3600
 color=#ebe310
 ```
