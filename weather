@@ -11,11 +11,11 @@ do
   http_status_code=$(curl -Is https://www.google.com | head -1 | grep -Eo '[0-9]{3}*')
 done                                                                            
                                                                                 
-weather=$(curl -s https://wttr.in/Gummersbach?format=1 | tr -d ' ')             
+weather=$(curl -s https://wttr.in/format=1 | tr -d ' ')             
                                                                                 
 if [[ $button -eq "1" ]]                                                        
 then                                                                            
-  xfce4-terminal -e "bash -c 'curl https://wttr.in/Gummersbach';bash"           
+  xfce4-terminal -e "bash -c 'curl https://wttr.in/';bash"           
   echo "$weather"                                                               
 else                                                                            
   echo "$weather"                                                               
