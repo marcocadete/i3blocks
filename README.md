@@ -31,7 +31,7 @@ This repository contains a set of scripts (a.k.a. blocklets) for [i3blocks](http
 This script will display the batteries charge percentage.  
 
 ### Dependencies
-* ![acpi](https://sourceforge.net/projects/acpiclient/files/acpiclient/)  
+* [acpi](https://sourceforge.net/projects/acpiclient/files/acpiclient/)  
 * font awesome
 
 ### Installation  
@@ -53,7 +53,7 @@ This script will display the CPU and RAM memory usage.
 
 ### Dependencies
 * python
-* ![psutil](https://github.com/giampaolo/psutil) 
+* [psutil](https://github.com/giampaolo/psutil) 
 * a task manager e.g xfce4-taskmanager
 * font awesome
 
@@ -148,7 +148,7 @@ with a terminal of your choice.
 This script will display the download and upload traffic on your network.  
 
 ### Dependencies
-* ![vnstat](https://humdi.net/vnstat/)
+* [vnstat](https://humdi.net/vnstat/)
 * font awesome
 
 ### Installation  
@@ -212,8 +212,8 @@ markup=pango
 This script will display the volume with options to mute/unmute and also open a volume control application.  
 
 ### Dependencies
-* ![pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer)
-* ![pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) or other volume control application
+* [pulsemixer](https://github.com/GeorgeFilipkin/pulsemixer)
+* [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) or other volume control application
 * font awesome
 
 ### Installation  
@@ -243,7 +243,7 @@ bindsym --release XF86AudioMute exec pkill -SIGRTMIN+10 i3blocks
 This script will display the brightness of your screen.  
 
 ### Dependencies
-* ![light](https://github.com/haikarainen/light)
+* [light](https://github.com/haikarainen/light)
 * font awesome
 
 ### Installation  
